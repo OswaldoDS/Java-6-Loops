@@ -44,7 +44,7 @@ public class EjercicioReto5 {
                     + "[3] Retirar dinero \n"
                     + "[4] Consultar últimos movimientos \n"
                     + "[5] Convertir divisas \n"
-                    + "[6] Salida \n"
+                    + "[0] Salida \n"
                     + "Elige una opción: ");
             options = scanner.nextByte();
 
@@ -128,7 +128,7 @@ public class EjercicioReto5 {
                     } while (opcionDivisas != 7);
 
                     break;
-                case 6:
+                case 0:
                     System.out.println("Regresa pronto...!\n");
                     System.exit(0);
                     break;
