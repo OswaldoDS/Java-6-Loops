@@ -14,11 +14,11 @@ public class EjercicioReto4 {
 
         if (edad >= 70) {
             ingresos += 500.0;
-        } else if (edad >= 50 && edad <= 69) {
+        } else if (edad >= 50) { //&& edad <= 69
             ingresos += 400.0;
-        } else if (edad >= 30 && edad <= 49) {
+        } else if (edad >= 30) { //&& edad <= 49
             ingresos += 250.0;
-        } else if (edad <= 29) {
+        } else {    //edad <= 29
             ingresos += 100.0;
         }
         System.out.println("Prima mensual: " + ingresos);
