@@ -11,7 +11,7 @@ public class EjercicioReto4 {
 
         System.out.print("Ingresa tus ingresos mensuales: ");
         double ingresos = scanner.nextDouble();
-
+        double ingresosMensuales = ingresos;
         if (edad >= 70) {
             ingresos += 500.0;
         } else if (edad >= 50) { //&& edad <= 69
@@ -21,6 +21,7 @@ public class EjercicioReto4 {
         } else {    //edad <= 29
             ingresos += 100.0;
         }
-        System.out.println("Prima mensual: " + ingresos);
+        ingresos = (ingresosMensuales >= 300) ? ingresos * 1.1 : ingresos * 1.05;
+        System.out.println("Prima mensual: " + Math.round(ingresos));
     }
 }
